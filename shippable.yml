@@ -1,13 +1,12 @@
 language: java
 
 jdk:
-   - oraclejdk7
    - openjdk6
    - openjdk7
-script:
-   - gradle clean build
-   - gradle test
-   - gradle cobertura
+
+after_success:
+   - mvn clean cobertura:cobertura
+   - mvn test
 notifications:
   email: false
 

@@ -1,5 +1,5 @@
-sample_java_postgres
+sample_java_mysql
 ================
 
-Sample Java project with PostgreSQL using Gradle.
+Sample Java project with MySQL using Maven.
 
