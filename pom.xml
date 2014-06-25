@@ -30,7 +30,6 @@
           </includes>
         </configuration>
       </plugin>
-
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>cobertura-maven-plugin</artifactId>
@@ -57,31 +56,6 @@
             <version>2.7.2</version>
           </dependency>
         </dependencies>
-      </plugin>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>sql-maven-plugin</artifactId>
-        <version>1.5</version>
-
-        <executions>
-          <execution>
-            <id>create-database</id>
-            <phase>process-test-resources</phase>
-            <goals>
-              <goal>execute</goal>
-            </goals>
-            <configuration>
-              <orderFile>ascending</orderFile>
-              <fileset>
-                <basedir>${basedir}</basedir>
-                <includes>
-                  <include>create-database.sql</include>
-                </includes>
-              </fileset>
-            </configuration>
-          </execution>
-        </executions>
-
       </plugin>
     </plugins>
   </build>

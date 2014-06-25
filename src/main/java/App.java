@@ -1,8 +1,9 @@
 package main;
 
 public class App {
-  public String getData() {
-    return "Hope this works!";
-    }
-  }
+	public App() {
+	}
+	public String getData() {
+		return "Hope this works!";
+	}
 }
